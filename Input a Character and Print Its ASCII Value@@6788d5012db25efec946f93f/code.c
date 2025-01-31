@@ -2,5 +2,5 @@
 int main() {
     char c;
     scanf("%c",&c);
-    printf("%d",c);
+    printf("%d",ord(c));
 }
