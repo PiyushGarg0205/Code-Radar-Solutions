@@ -3,7 +3,6 @@
 int main() {
     chr str[100];
     chr str1[100];
-    scanf("%s",str);
-    scanf("%s",str1);
+    scanf("%s %s",str);
     printf("You entered:%s and %s",str,str1);
 }
