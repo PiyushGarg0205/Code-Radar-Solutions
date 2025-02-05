@@ -9,6 +9,6 @@ int main() {
         printf("Zero");
     }
     else if(a<0){
-        print("Negative");
+        printf("Negative");
     }
 }
