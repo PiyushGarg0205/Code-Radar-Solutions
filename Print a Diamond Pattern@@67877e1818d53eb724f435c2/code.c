@@ -11,7 +11,7 @@ int main() {
                 limit=2*i-1;
             }
             else{
-                limit=2*(i-n+1)-1;
+                limit=i/2+1;
             }
         for (k=1;k<=limit;k++){
             printf("*");
