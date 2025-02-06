@@ -7,13 +7,19 @@ int main() {
         for (j=1;j<=abs(n-i);j++){
             printf(" ");
         }
-        if (i<=n){
-                limit=2*i-1;
-            }
-            else{
-                limit=i/2+1;
-            }
-        for (k=1;k<=limit;k++){
+        if(i<=n){
+            limit=i;
+        }
+        else if(i>n && i!=2n){
+            limit=2*(n-1)-1;
+        }
+        else if(i==2n){
+            limit=1;
+        }
+        for (k=1;k<=2*limit-1;k++){
+            printf("*");
+        }
+        for (l=1;l<=limit;l++){
             printf("*");
         }
         printf("\n");
