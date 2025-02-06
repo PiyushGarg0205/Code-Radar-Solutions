@@ -6,6 +6,7 @@ int main() {
         for(j=limit;j<2*limit;j++){
             printf("%d ",j);
         }
+        limit++;
         printf("\n");
     }
 }
