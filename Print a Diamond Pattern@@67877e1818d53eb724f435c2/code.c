@@ -16,7 +16,7 @@ int main() {
             limit++;
         }
         else{
-            i--;
+            limit--;
         }
         printf("\n");
     }
