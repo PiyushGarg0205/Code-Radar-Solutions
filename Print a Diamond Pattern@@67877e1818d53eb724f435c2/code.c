@@ -1,20 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 int main() {
-    int i,j,k,n,limit;
-    scanf("%d",&n);
-    for (i=1;i>0;){
-        for (j=1;j<=abs(n-i);j++){
+    int i, j, k, n;
+    scanf("%d", &n);
+
+    for (i = 1; i > 0; ) {  // Stop when i reaches 0
+        // Print leading spaces
+        for (j = 1; j <= abs(n - i); j++) {
             printf(" ");
         }
-        for (k=1;k<=2*i-1;k++){
+        
+        // Print stars
+        for (k = 1; k <= 2 * i - 1; k++) {
             printf("*");
         }
-        if(i<n){
+        
+        printf("\n");  // Move to next line
+        
+        // Increase i until it reaches n, then start decreasing
+        if (i < n) {
             i++;
-        }
-        else{
+        } else {
             i--;
         }
     }
+
+    return 0;
 }
