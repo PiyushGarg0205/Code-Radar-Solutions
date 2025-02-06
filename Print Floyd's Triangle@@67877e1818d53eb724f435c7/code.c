@@ -3,10 +3,9 @@ int main() {
     int i,j,n,limit=1;
     scanf("%d",&n);
     for(i=1;i<=n;i++){
-        for(j=limit;j<2*limit;j++){
-            printf("%d ",j);
+        for (j=1;j<=i;j++){
+            printf("%d ",limit++);
         }
-        limit++;
         printf("\n");
     }
 }
