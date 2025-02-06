@@ -8,7 +8,7 @@ int main() {
             break;
         }
     }
-    if (a%i==0 || a==2 || a==1 || a==0){
+    if (a%i==0 && a!=2 && a!=1 && a!=0){
         printf("Not Prime");
     }
     else{
