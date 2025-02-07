@@ -7,7 +7,7 @@ int main() {
             printf(" ");
 
         }
-        for (k=1;k<=2*i-1;){
+        for (k=1;k<=2*i-1;k++){
             limit=1;
             if(limit<i){
                 printf("%d",limit++);
