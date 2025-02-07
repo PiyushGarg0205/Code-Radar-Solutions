@@ -9,10 +9,10 @@ int main() {
         }
         for (k=1;k<=2*i-1;k++){
             if (k<2*i-1){
-                printf("%d",k++)
+                printf("%d",k++);
             }
             else{
-                printf("%d",k--)
+                printf("%d",k--);
             }
 
         }
