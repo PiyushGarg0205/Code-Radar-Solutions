@@ -7,9 +7,9 @@ int main() {
             printf(" ");
 
         }
+        limit=1;
         for (k=1;k<=2*i-1;k++){
-            limit=1;
-            if(limit<i){
+            if(limit<=i){
                 printf("%d",limit++);
             }
             else{
