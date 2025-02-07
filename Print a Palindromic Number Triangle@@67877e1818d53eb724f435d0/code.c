@@ -7,12 +7,13 @@ int main() {
             printf(" ");
 
         }
-        for (k=1;k<=2*i-1;k++){
+        for (k=1;k<=2*i-1;){
+            limit=1;
             if (k<2*i-1){
-                printf("%d",k++);
+                printf("%d",limit++);
             }
             else{
-                printf("%d",k--);
+                printf("%d",limit--);
             }
 
         }
