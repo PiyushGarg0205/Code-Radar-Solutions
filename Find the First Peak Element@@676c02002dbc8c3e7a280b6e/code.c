@@ -9,11 +9,20 @@ int main() {
         arr[i]=a;
     }
     int x=0;
-    for (int i=0;i<n-1;i++){
+    for (int i=0;i<n;i++){
+        if(i<n-1){
         if((arr[i]>arr[i-1]) && (arr[i]>arr[i+1])){
             printf("%d",arr[i]);
             x=1;
             break;
+        }
+        }
+        else if(i==n-1){
+            if(arr[i]>arr[i-1]){
+                printf("%d",arr[i]);
+                x=1;
+                break;
+            }
         }
     }
     if(x==0){
