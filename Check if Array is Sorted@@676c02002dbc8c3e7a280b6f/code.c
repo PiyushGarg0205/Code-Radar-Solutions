@@ -8,7 +8,7 @@ int main() {
         scanf("%d "&a);
         arr[i]=a;
     }
-    int x=0
+    int x=0;
     for (int i=0;i<n;i++){
         if(arr[i]>arr[i+1]){
             printf("Not Sorted");
