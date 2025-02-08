@@ -11,6 +11,7 @@ int bubleSort(int arr[],n){
             }
         }
     }
+    return arr;
 }
 int printArray(int arr[],n){
     for (int i=0;i<n;i++){
