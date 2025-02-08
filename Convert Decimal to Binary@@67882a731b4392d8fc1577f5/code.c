@@ -8,6 +8,7 @@ int main() {
         binary[index++]=num&1;
         num>>=1;
     }
+    int i;
     for (i=index-1;i>=0;i--){
         printf("%d",binary[i]);
     }
