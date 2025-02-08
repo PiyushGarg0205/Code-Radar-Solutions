@@ -11,11 +11,11 @@ int main() {
     int arr1[n];
     for(int i=0;i<n;i++){
         int count=1;
-        if(arr[i]!=0){
+        if(arr[i]!=10000){
         for(int j=i+1;j<n;j++){
             if((arr[i]==arr[j]) && (arr[i]!=0)){
                 count+=1;
-                arr[j]=0;
+                arr[j]=10000;
             }
             
         }
