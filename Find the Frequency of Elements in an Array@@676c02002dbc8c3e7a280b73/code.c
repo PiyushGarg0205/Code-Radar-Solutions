@@ -13,7 +13,6 @@ int main() {
         for(int j=1;j<n;j++){
             if((arr[i]==arr[j]) && (arr[i]!=-10000)){
                 count+=1;
-                arr[j]=-10000;
             }
         }
         printf("%d %d\n",arr[i],count);
