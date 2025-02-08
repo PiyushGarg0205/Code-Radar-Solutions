@@ -11,22 +11,11 @@ int main() {
     int k;
     scanf("%d",&k);
     for (int i=1;i<=k;i++){
-        for (int j=0;j<n;j++){
-            int temp;
-            if(j<n-1){
-                int temp;
-                temp=arr[j+1];
-                arr[j+1]=arr[j];
-                arr[j]=temp;
-            }
-            else{
-                int temp;
-                temp=arr[n-1];
-                arr[n-1]=arr[n-2];
-                arr[0]=temp;
-            }
-
+        int temp=arr[n-1];
+        for (int j=n-2;j>0;j--){
+            arr[j]=arr[j-1];
         }
+        arr[0]=temp
     }
     int i;
     for (i=0;i<n;i++){
