@@ -2,7 +2,7 @@
 int main() {
     int num,nth;
     scanf("%d %d",&num,&nth);
-    sb=1<<nth;
+    int  sb=1<<nth;
     if(num & sb){
         printf("%d",1);
     }
