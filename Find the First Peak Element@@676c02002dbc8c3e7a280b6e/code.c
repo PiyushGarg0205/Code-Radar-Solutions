@@ -5,11 +5,11 @@ int main() {
     int arr[n];
     for (i=0;i<n;i++){
         int a;
-        scanf("%d\n",&a);
+        scanf("%d",&a);
         arr[i]=a;
     }
     int x=0;
-    for (i=0;i<n-1;i++){
+    for (int i=0;i<n-1;i++){
         if((arr[i]>arr[i-1]) && (arr[i]>arr[i+1])){
             printf("%d",arr[i]);
             x=1;
