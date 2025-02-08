@@ -9,7 +9,6 @@ int main() {
         arr[i]=a;
     }
     int k;
-    pos=n-1
     scanf("%d",&k);
     for (int i=1;i<=k;i++){
         for (int j=0;j<n;j++){
