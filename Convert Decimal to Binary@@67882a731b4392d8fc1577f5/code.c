@@ -5,7 +5,7 @@ int main() {
     if(num=0){
         printf("%d",0);
     }
-    else{nt binary[32];
+    else{int binary[32];
     int index=0;
     while(num !=0){
         binary[index++]=num&1;
