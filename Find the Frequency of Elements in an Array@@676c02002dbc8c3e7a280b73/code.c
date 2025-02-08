@@ -13,7 +13,7 @@ int main() {
         int count=1;
         if(arr[i]!=10000){
         for(int j=i+1;j<n;j++){
-            if((arr[i]==arr[j]) && (arr[i]!=0)){
+            if((arr[i]==arr[j])){
                 count+=1;
                 arr[j]=10000;
             }
