@@ -9,7 +9,7 @@ int main() {
         arr[i]=a;
     }
     int secmax=arr[0],max=arr[0];
-    for(i=0;i<n;i++){
+    for(int i=0;i<n;i++){
         if(max<arr[i]){
             secmax=max;
             max=arr[i];
