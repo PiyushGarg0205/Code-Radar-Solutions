@@ -20,12 +20,12 @@ int main() {
            if(secmax<arr[i]){
             secmax=arr[i];
         } 
-        if(secmax<max && n!=1){
+        }
+        if(secmax<max){
             printf("%d",secmax);
         }
         else{
             printf("%d",-1);
-        }
         }
     }
     else{
