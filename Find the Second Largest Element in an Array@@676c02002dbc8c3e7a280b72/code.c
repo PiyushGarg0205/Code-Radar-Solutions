@@ -20,7 +20,7 @@ int main() {
            if(secmax<arr[i]){
             secmax=arr[i];
         } 
-        if(secmax<max){
+        if(secmax<max && n!=1){
             printf("%d",secmax);
         }
         else{
