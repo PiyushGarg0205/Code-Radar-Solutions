@@ -8,7 +8,7 @@ int main() {
         scanf("%d",&a);
         arr[i]=a;
     }
-    int max=arr[0];
+    int max=arr[0],secmax;
     for(int i=0;i<n;i++){
         if(max<arr[i]){
             secmax=max;
