@@ -19,5 +19,8 @@ int main() {
             count+=1;
         }
     }
-    printf("%d",count);
+    if(count==n){
+        printf("%d",-1);
+    }
+    else{printf("%d",count);}
 }
