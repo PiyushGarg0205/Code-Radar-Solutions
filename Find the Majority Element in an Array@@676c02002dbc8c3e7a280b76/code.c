@@ -18,12 +18,12 @@ int main() {
                 arr[j]=100;
             }
         }
-        if(count1>count && count1>=(n/2)){
+        if(count1>count){
             count=count1;
             candidate=arr[i];
             x=0;
         }
-        else{
+        else if(count1==count){
             x=1;
         }
     }
