@@ -30,7 +30,7 @@ int main() {
     if(x==1){
         printf("%d",-1);
     }
-    else{
+    else if(count==1 || count>(n/2)){
         printf("%d",candidate);
     }
 }
