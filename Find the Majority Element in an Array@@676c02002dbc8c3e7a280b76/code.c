@@ -5,7 +5,7 @@ int main() {
     int arr[n];
     for(int i=0;i<n;i++){
         int a;
-        scnaf("%d",&a);
+        scanf("%d",&a);
         arr[i]=a;
     }
     int count=1;candidate=0;
