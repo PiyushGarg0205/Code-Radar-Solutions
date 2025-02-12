@@ -18,7 +18,7 @@ int main() {
                 arr[j]=100;
             }
         }
-        if(count1>count && count1>(n/2)){
+        if(count1>count && count1>=(n/2)){
             count=count1;
             candidate=arr[i];
             x=0;
