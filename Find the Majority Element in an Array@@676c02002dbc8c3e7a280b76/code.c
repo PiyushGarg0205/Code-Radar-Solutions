@@ -9,6 +9,7 @@ int main() {
         arr[i]=a;
     }
     int count=1,candidate=0;
+    int x=0;
     for(int i=0;i<n;i++){
         int count1=1;
         for (int j=i+1;j<n;j++){
@@ -20,7 +21,16 @@ int main() {
         if(count1>count){
             count=count1;
             candidate=arr[i];
+            x=0;
+        }
+        else if(count1==count){
+            x=1;
         }
     }
-    printf("%d",candidate);
+    if(x==1){
+        printf("%d",-1);
+    }
+    else{
+        printf("%d",candidate);
+    }
 }
