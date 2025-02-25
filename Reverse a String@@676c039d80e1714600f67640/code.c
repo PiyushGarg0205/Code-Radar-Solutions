@@ -4,5 +4,7 @@
     char c[50];
     scanf("%s",&c);
     int n=strlen(c);
-    printf("%d",n);
+    for(int i=n-1;i>=0;i--){
+        printf("%c",c[i]);
+    }
  }
