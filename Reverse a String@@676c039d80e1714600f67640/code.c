@@ -3,8 +3,9 @@
 int main() {
     char c[50];
     printf("%s",&c);
-    int length=strlen(c);
+    char d[]=c;
+    int length=strlen(cd);
     for (int i=length-1;i>0;i--){
-        printf("%c",c[i]);
+        printf("%c",d[i]);
     }
 }
