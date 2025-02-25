@@ -1,10 +1,7 @@
-#include <stdio.h>
-#include <string.h>
-int main() {
+ #include <stdio.h>
+ int main(){
     char c[50];
-    printf("%s",&c);
+    scanf("%s",&c);
     strrev(c);
     printf("%s",c);
-    
-    
-}
+ }
