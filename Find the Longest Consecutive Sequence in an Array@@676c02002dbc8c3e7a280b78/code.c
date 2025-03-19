@@ -9,10 +9,12 @@ int main(){
         arr[i]=a;
     }
     for(int i=0;i<n;i++){
-        if(arr[i]>arr[i+1]){
-            int a=arr[i];
-            arr[i]=arr[i+1];
-            arr[i+1]=a;
+        for(int j=i+1;j<n;j++){
+            if(arr[i]>arr[j]){
+                int c=arr[i];
+                arr[i]=arr[j];
+                arr[j]=c;
+            }
         }
     }
     for(int i=0;i<n;i++){
@@ -32,4 +34,5 @@ int main(){
             count=count1;
         }
     }
+    printf("%d",count);
 }
