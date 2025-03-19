@@ -17,7 +17,7 @@ int main() {
                 break;
             }
         }
-        if((x==0 || arr[i]==2)&&(arr[i]!=2)&&(arr[i]!=0)){
+        if((x==0 || arr[i]==2)&&(arr[i]!=1)&&(arr[i]!=0)){
             count+=1;
         }
     }
