@@ -8,6 +8,16 @@ int main(){
         scanf("%d",&a);
         arr[i]=a;
     }
+    for(int i=0;i<n;i++){
+        if(arr[i]>arr[i+1]){
+            int a=arr[i];
+            arr[i]=arr[j];
+            arr[j]=a;
+        }
+    }
+    for(int i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
     int count=1;
     for(int i=0;i<n;i++){
         int a=arr[i];
