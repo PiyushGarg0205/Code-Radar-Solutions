@@ -9,7 +9,8 @@ int main(){
         arr[i]=a;
     }
     for(int i=0;i<n;i++){
-        if(arr[i]==0){
+        for(int k=0;k<n;k++){
+        if(arr[k]==0){
             for(int j=i+1;j<n;j++){
                 if(arr[j]>0){
                     int c=arr[i];
@@ -18,7 +19,7 @@ int main(){
                     i=j;
                 }
             }
-        }
+        }}
     }
     for(int i=0;i<n;i++){
         printf("%d ",arr[i]);
