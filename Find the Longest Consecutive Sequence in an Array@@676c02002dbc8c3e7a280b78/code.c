@@ -32,5 +32,4 @@ int main(){
             count=count1;
         }
     }
-    printf("%d",count);
 }
