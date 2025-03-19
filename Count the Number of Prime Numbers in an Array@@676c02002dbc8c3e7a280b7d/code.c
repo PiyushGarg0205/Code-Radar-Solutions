@@ -11,7 +11,7 @@ int main() {
     int count=0;
     for (int i=0;i<n;i++){
         int x=0;
-        for(int j=2;j<=(arr[i]);j++){
+        for(int j=2;j<=(arr[i])/2;j++){
             if(arr[i]%j==0){
                 x=1;
                 break;
