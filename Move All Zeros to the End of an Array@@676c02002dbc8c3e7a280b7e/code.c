@@ -1,27 +1,27 @@
 #include<stdio.h>
-int main(){
+
+int main() {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
     int arr[n];
-    for(int i=0;i<n;i++){
-        int a;
-        scanf("%d",&a);
-        arr[i]=a;
+
+    // Input the array
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    for(int i=0;i<n;i++){
-        for(int k=0;k<n;k++){
-        if(arr[k]==0){
-            for(int j=i+1;j<n;j++){
-                if(arr[j]>0){
-                    int c=arr[i];
-                    arr[i]=arr[j];
-                    arr[j]=c;
-                    i=j;
-                }
-            }
-        }}
+    int idx = 0;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] != 0) {
+            arr[idx] = arr[i];
+            idx++;
+        }
     }
-    for(int i=0;i<n;i++){
-        printf("%d ",arr[i]);
+    for (int i = idx; i < n; i++) {
+        arr[i] = 0;
     }
+
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    return 0;
 }
