@@ -8,7 +8,7 @@ int main(){
         scanf("%d",&a);
         arr[i]=a;
     }
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n;i++){           //pehle sort kia he array ko
         for(int j=i+1;j<n;j++){
             if(arr[i]>arr[j]){
                 int c=arr[i];
@@ -17,12 +17,9 @@ int main(){
             }
         }
     }
-    for(int i=0;i<n;i++){
-        printf("%d ",arr[i]);
-    }
     int count=1;
     for(int i=0;i<n;i++){
-        int a=arr[i];
+        int a=arr[i];        //then consecutive numbers ko find krne ki koshish ki he,if found count+=1
         int count1=1;
         for (int j=0;j<n;j++){
             if((arr[j]==(a+1))){
