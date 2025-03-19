@@ -20,5 +20,5 @@ int main(){
             min+=1;
         }
     }}
-    printf("%d",min;)
+    printf("%d",min);
 }
