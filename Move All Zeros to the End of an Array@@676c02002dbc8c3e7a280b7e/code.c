@@ -12,8 +12,9 @@ int main(){
         if(arr[i]==0){
             for(int j=i+1;j<n;j++){
                 if(arr[j]>0){
+                    int c=arr[i];
                     arr[i]=arr[j];
-                    arr[j]=0;
+                    arr[j]=c;
                 }
             }
         }
