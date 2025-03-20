@@ -12,7 +12,7 @@ int main(){
             min=arr[i];
         }
     }
-    secondmin=1000;
+    int secondmin=1000;
     for(int i=0;i<n;i++){
         if((arr[i]<secondmin)&&(arr[i]!=min)){
             secondmin=arr[i];
