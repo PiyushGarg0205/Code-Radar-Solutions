@@ -1,25 +1,19 @@
-#include <stdio.h>
-#include <string.h>
-
-int main() {
+#include<stdio.h>
+#include<string.h>
+int main(){
     char c[50];
-    scanf("%s", c);
-
+    scanf("%s",&c);
+    int len=strlen(c);
     char x[50];
-    int len = strlen(c);
-
-    // Reverse the string manually
-    for (int i = 0; i < len; i++) {
-        x[i] = c[len - 1 - i];
+    int count=len-1;
+    for(int i=0;i<len;i++){
+        x[i]=c[count--];
     }
-    x[len] = '\0'; // Null terminate the reversed string
-
-    int cmp = strcmp(c, x);
-    if (cmp == 0) {
-        printf("YES\n"); // It's a palindrome
-    } else {
-        printf("NO\n");
+    int cmp=strcmp(c,x);
+    if(cmp==0){
+        printf("Yes");
     }
-
-    return 0;
+    else{
+        printf("No");
+    }
 }
