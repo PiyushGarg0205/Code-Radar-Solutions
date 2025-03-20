@@ -15,6 +15,6 @@ int main(){
         sum[i]=tsum;
     }
     for(int i=0;i<n;i++){
-        printf("%d ",&sum[i]);
+        printf("%d ",sum[i]);
     }
 }
