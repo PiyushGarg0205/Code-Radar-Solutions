@@ -40,7 +40,7 @@ int main(){
                 break;
             }
             else{
-                x=1
+                x=1;
             }
         }
         if(x==0){
