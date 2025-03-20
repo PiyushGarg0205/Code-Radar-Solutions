@@ -13,7 +13,7 @@ int main(){
         pair[0]=1000;
         for(int j=0;j<n;j++){
             if(((arr[i]+arr[j])==num)&&(i!=j)){
-                if(pair[0]!=arr[i]){
+                if(pair[1]!=arr[j]){
                 pair[0]=arr[i];
                 pair[1]=arr[j];}
                 arr[i]=100000;
