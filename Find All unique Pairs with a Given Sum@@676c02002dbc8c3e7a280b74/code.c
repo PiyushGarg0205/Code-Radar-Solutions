@@ -16,6 +16,7 @@ int main(){
                 pair[0]=arr[i];
                 pair[1]=arr[j];
                 arr[i]=100000;
+                arr[j]=100000;
                 break;
             }
         }
