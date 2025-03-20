@@ -17,7 +17,7 @@ int main(){
                 pair[1]=arr[j];
             }
         }
-        if(pair[0]==1000){
+        if(pair[0]!=1000){
         for(int k=0;k<2;k++){
             printf("%d ",pair[k]);
         }
