@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
     int n;
-    scanf("%d,&n");
+    scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
@@ -15,6 +15,8 @@ int main(){
             if((arr[i]+arr[j])==num){
                 pair[0]=arr[i];
                 pair[1]=arr[j];
+                arr[i]=100000;
+                break;
             }
         }
         if(pair[0]!=1000){
