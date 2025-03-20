@@ -9,7 +9,8 @@ int main(){
     int min=10000;
     int minimum[2];
     for(int i=0;i<n;i++){
-        for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+        if(i!=j){
         int sub=arr[j]-arr[i];
         if(sub<0){
             sub=sub*-1;
@@ -19,7 +20,7 @@ int main(){
             minimum[0]=arr[i];
             minimum[1]=arr[j];
         }
-    }
+    }}
     }
     if(n==1){
         printf("-1");
