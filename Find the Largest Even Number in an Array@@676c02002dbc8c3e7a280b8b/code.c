@@ -8,7 +8,7 @@ int main(){
     }
     int even[n];
     for(int i=0;i<n;i++){
-        even[i]=0;
+        even[i]=-100;
     }
     int count=0;
     for(int i=0;i<n;i++){
@@ -22,7 +22,7 @@ int main(){
             max=even[i];
         }
     }
-    if(max==0){
+    if(max==-100){
         printf("-1");
     }
     else{
