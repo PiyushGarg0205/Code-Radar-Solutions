@@ -8,8 +8,8 @@ int main(){
     }
     int num;
     scanf("%d",&num);
+    int pair[2];
     for(int i=0;i<n;i++){
-        int pair[2];
         pair[0]=1000;
         for(int j=0;j<n;j++){
             if(((arr[i]+arr[j])==num)&&(i!=j)){
