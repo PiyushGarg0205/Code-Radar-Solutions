@@ -17,8 +17,8 @@ int main(){
         }
         if(sub<min){
             min=sub;
-            minimum[0]=arr[i];
-            minimum[1]=arr[j];
+            minimum[0]=arr[j];
+            minimum[1]=arr[i];
         }
     }}
     }
@@ -27,6 +27,6 @@ int main(){
     }
     else{
     for(int i=0;i<2;i++){
-        printf("%d",minimum[i]);
+        printf("%d ",minimum[i]);
     }}
 }
