@@ -20,9 +20,8 @@ int main(){
             }
         }
         if(pair[0]!=1000){
-        for(int k=0;k<2;k++){
-            printf("%d ",pair[k]);
-        }
+        printf("%d ",pair[0]);
+        printf("%d\n",pair[1]);
         }
     }
 }
