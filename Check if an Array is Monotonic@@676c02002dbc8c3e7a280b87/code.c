@@ -15,7 +15,7 @@ int main(){
     else{          //decreasing
     int x=1;
         if(arr[0]>arr[1]){ 
-            for(int i=1;i<n;i++){
+            for(int i=1;i<n-1;i++){
                 if(arr[i]<arr[i+1]){
                     x=0;
                     break;
@@ -23,7 +23,7 @@ int main(){
             }
         }
         else if(arr[0]<arr[1]){    //increasing
-            for(int i=1;i<n;i++){
+            for(int i=1;i<n-1;i++){
                 if(arr[i]>arr[i+1]){
                     x=0;
                     break;
@@ -31,7 +31,7 @@ int main(){
             }
         }
         else if(arr[0]==arr[1]){
-            for(int i=1;i<n;i++){
+            for(int i=1;i<n-1;i++){
                 if(arr[i]==arr[i+1]){
                     x=1;
                 }
