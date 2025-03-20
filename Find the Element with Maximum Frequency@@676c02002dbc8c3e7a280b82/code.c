@@ -20,7 +20,7 @@ int main(){
             max=arr[i];
         }
         else if(count==incount){
-            max=arr[j]<max?arr[j]:max;
+            max=arr[i]<max?arr[i]:max;
         }
     }
     printf("%d",max);
