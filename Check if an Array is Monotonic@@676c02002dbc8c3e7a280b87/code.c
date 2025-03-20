@@ -16,6 +16,7 @@ int main(){
         if(arr[0]>arr[1]){
             goto decreasing;
         }
+        int x;
         else if(arr[0]<arr[1]){
             goto increasing;
         }
@@ -25,22 +26,28 @@ int main(){
         increasing:
         for(int i=1;i<n;i++){
             if(arr[i]<arr[i+1]){
-                printf("NO");
+                x=0;
                 break;
             }
             else{
-                printf("YES");
+                x=1;
             }
         }
         decreasing:
         for(int i=1;i<n;i++){
             if(arr[i]>arr[i+1]){
-                printf("NO");
+                x=0;
                 break;
             }
             else{
-                printf("YES");
+                x=1
             }
+        }
+        if(x==0){
+            printf("YES");
+        }
+        else{
+            printf("NO");
         }
     }
 }
