@@ -21,8 +21,10 @@ int main(){
             minimum[1]=arr[i];
         }
         else if(sub==min){
-            minimum[0]=arr[j]<minimum[0]?arr[j]:minimum[0];
-            minimum[1]=arr[i]<minimum[1]?arr[j]:minimum[1];
+            if(minimum[0]>arr[i]){
+                minimum[0]=arr[j];
+            minimum[1]=arr[i];
+            }
         }
     }}
     }
