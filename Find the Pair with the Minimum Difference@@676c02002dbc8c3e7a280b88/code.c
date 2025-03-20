@@ -22,6 +22,11 @@ int main(){
         }
     }}
     }
+    if(minimum[0]>minimum[1]){
+        int c=minimum[0];
+        minimum[0]=minimum[1];
+        minimum[1]=c;
+    }
     if(n==1){
         printf("-1");
     }
