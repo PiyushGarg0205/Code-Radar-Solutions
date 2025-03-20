@@ -2,7 +2,7 @@
 #include<string.h>
 int main(){
     char c[100];
-    scanf("%s",&c);
+    fgets(c, sizeof(c), stdin);
     int len=strlen(c);
     int count=0;
     int inword=0;
