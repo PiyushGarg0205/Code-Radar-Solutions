@@ -12,7 +12,7 @@ int main(){
         int pair[2];
         pair[0]=1000;
         for(int j=0;j<n;j++){
-            if((arr[i]+arr[j])==num){
+            if(((arr[i]+arr[j])==num)&&(i!=j)){
                 pair[0]=arr[i];
                 pair[1]=arr[j];
                 arr[i]=100000;
