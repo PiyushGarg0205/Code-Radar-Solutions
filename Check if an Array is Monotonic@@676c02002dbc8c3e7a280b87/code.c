@@ -13,10 +13,10 @@ int main(){
         printf("NO");
     }
     else{
+        int x;
         if(arr[0]>arr[1]){
             goto decreasing;
         }
-        int x;
         else if(arr[0]<arr[1]){
             goto increasing;
         }
