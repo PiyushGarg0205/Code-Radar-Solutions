@@ -6,48 +6,47 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    if(n==0||n==1||n==2){
+    if(n==0||n==2||n==1){
         printf("YES");
     }
     else if(n<0){
         printf("NO");
     }
-    else{
-        int x;
-        if(arr[0]>arr[1]){
-            goto decreasing;
-        }
-        else if(arr[0]<arr[1]){
-            goto increasing;
-        }
-        else{
-            printf("YES");
-        }
-        increasing:
-        for(int i=1;i<n;i++){
-            if(arr[i]<arr[i+1]){
-                x=0;
-                break;
-            }
-            else{
-                x=1;
+    else{          //decreasing
+    int x=1;
+        if(arr[0]>arr[1]){ 
+            for(int i=1;i<n;i++){
+                if(arr[i]<arr[i+1]){
+                    x=0;
+                    break;
+                }
             }
         }
-        decreasing:
-        for(int i=1;i<n;i++){
-            if(arr[i]>arr[i+1]){
-                x=0;
-                break;
+        else if(arr[0]<arr[1]){    //increasing
+            for(int i=1;i<n;i++){
+                if(arr[i]>arr[i+1]){
+                    x=0;
+                    break;
+                }
             }
-            else{
-                x=1;
+        }
+        else if(arr[0]==arr[1]){
+            for(int i=1;i<n;i++){
+                if(arr[i]==arr[i+1]){
+                    x=1;
+                }
+                else{
+                    x=0;
+                    break;
+                }
             }
         }
         if(x==0){
-            printf("YES");
+            printf("NO");
+
         }
         else{
-            printf("NO");
+            printf("YES");
         }
     }
 }
