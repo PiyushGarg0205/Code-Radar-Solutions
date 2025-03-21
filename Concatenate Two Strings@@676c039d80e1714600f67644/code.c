@@ -20,7 +20,7 @@ int main(){
             break;
         }
         else{
-            countc++;
+            countc1++;
         }
     }
 
