@@ -28,6 +28,6 @@ int main(){
         c[countc++]=c1[i];
     }
     c[countc]=='\0';
-    printf(%s,c);
+    printf("%s",c);
 
 }
