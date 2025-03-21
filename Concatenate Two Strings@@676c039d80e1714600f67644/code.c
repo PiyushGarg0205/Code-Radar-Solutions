@@ -20,7 +20,8 @@ int main(){
             break;
         }
         else{
-            c[++countc]=c1[i];
+            c[countc]=c1[i];
+            countc++;
         }
     }
     c[countc] = '\0';
