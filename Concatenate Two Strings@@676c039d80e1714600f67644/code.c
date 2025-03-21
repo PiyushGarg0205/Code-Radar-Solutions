@@ -13,7 +13,6 @@ int main(){
         else{
             countc++;
         }
-        printf("%d",countc);
-    
-
-}}
+}
+printf("%d",countc);
+}
