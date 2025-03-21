@@ -7,7 +7,6 @@ int main(){
     int countc=0;
     for(int i=0;i<50;i++){
         if(c[i]=='\0'){
-            countc+=1;
             break;
         }
         else{
