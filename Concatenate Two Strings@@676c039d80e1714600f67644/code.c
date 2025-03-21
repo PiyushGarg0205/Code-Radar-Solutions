@@ -13,21 +13,7 @@ int main(){
         else{
             countc++;
         }
-    }
-    int countc1=0;
-    for(int i=0;i<50;i++){
-        if(c1[i]=='\0'){
-            break;
-        }
-        else{
-            countc1++;
-        }
-    }
+        printf("%d",countc);
+    
 
-    for(int i=0;i<countc1;i++){
-        c[countc++]=c1[i];
-    }
-    c[countc]=='\0';
-    printf("%s",c);
-
-}
+}}
