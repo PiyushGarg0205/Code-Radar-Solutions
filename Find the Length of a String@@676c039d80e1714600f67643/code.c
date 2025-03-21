@@ -5,7 +5,7 @@ int main(){
     scanf("%s",&c);
     int count=0;
     for(int i=0;i<50;i++){
-        if(c[i]=='/0'){
+        if(c[i]=="/0"){
             break;
 
         }
@@ -13,5 +13,5 @@ int main(){
             count+=1;
         }
     }
-    printF("%d",count);
+    printf("%d",count);
 }
