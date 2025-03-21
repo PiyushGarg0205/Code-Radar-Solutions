@@ -14,7 +14,14 @@ int main(){
         }
         else{
             countc++;
+        }}
+    for(int i=0;i<50;i++){
+        if(c1[i]=='\0'){
+            break;
         }
-}
-printf("%d",countc);
+        else{
+            c[++countc]=c1[i];
+        }
+    }
+    printf("%s",c);
 }
