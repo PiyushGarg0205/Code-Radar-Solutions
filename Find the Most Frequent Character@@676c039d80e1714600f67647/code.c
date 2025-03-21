@@ -14,7 +14,8 @@ int main(){
             }
         }
         if(maxcount<count){
-            x=c[i];
+            if(c[i]<x){
+            x=c[i];}
         }
     }
     if(maxcount==1){
