@@ -16,7 +16,7 @@ int main(){
     }
     int countc1=0;
     for(int i=0;i<50;i++){
-        if(c[i]=='\0'){
+        if(c1[i]=='\0'){
             break;
         }
         else{
