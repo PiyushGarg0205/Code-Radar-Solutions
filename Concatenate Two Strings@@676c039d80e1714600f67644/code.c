@@ -6,7 +6,7 @@ int main(){
     c[strcspn(c, "\n")] = '\0';
     char c1[50];
     fgets(c1,sizeof(c1),stdin);
-    c1[strcspn(c, "\n")] = '\0';
+    c1[strcspn(c1, "\n")] = '\0';
     int countc=0;
     for(int i=0;i<50;i++){
         if(c[i]=='\0'){
