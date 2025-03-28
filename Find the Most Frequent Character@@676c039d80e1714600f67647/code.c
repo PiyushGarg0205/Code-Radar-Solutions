@@ -17,6 +17,10 @@ int main(){
             if(c[i]<x){
             x=c[i];}
         }
+        else if(maxcount==count){
+            if(c[i]<x){
+            x=c[i];}
+        }
     }
     if(maxcount==1){
         printf("%c",c[len-1]);
