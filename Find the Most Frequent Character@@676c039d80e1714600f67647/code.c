@@ -20,7 +20,7 @@ int main(){
         else if(maxcount==count){
             if(c[i]<x){
             x=c[i];}
-        }5
+        }
     }
     if(maxcount==1){
         printf("%c",c[len-1]);
