@@ -1,24 +1,32 @@
-#include<stdio.h>
-int main(){
-    int n;
-    scanf("%d",&n);
-    int arr[n];
-    for(int i=0;i<n;i++){
-        int a;
-        scanf("%d",&a);
-        arr[i]=a;
-    }
-    for(int i=0;i<n;i++){
-        int max=0;
-        for(int j=i+1;j<n;j++){
-            if(arr[j]>max){
-                max=arr[j];
-            }
+#include <stdio.h>
+
+void nextGreaterElement(int arr[], int n) {
+    int stack[n], top = -1; // Stack to keep track of elements
+    int result[n];
+
+    for (int i = n - 1; i >= 0; i--) {  // Traverse from right to left
+        while (top >= 0 && stack[top] <= arr[i]) {
+            top--; // Pop smaller elements
         }
-        arr[i]=max;
+
+        result[i] = (top == -1) ? -1 : stack[top]; // If stack is empty, assign -1
+        stack[++top] = arr[i]; // Push current element to stack
     }
-    arr[n-1]=-1;
-    for(int i=0;i<n;i++){
-        printf("%d ",arr[i]);
+
+    for (int i = 0; i < n; i++) {
+        printf("%d ", result[i]);
     }
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    int arr[n];
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    nextGreaterElement(arr, n);
+    return 0;
 }
