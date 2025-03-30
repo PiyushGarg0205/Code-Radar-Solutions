@@ -1,20 +1,18 @@
 #include <stdio.h>
 
 void nextGreaterElement(int arr[], int n) {
-    int result[n];
-    int stack[n], top = -1;  // Stack to store indices
+    int maxRight = -1; // Variable to store the maximum element to the right
 
     for (int i = n - 1; i >= 0; i--) {  // Traverse from right to left
-        while (top >= 0 && arr[stack[top]] <= arr[i]) {
-            top--;  // Pop elements smaller than current element
+        int temp = arr[i];  // Store the current value before modifying it
+        arr[i] = maxRight;  // Replace current element with maxRight
+        if (temp > maxRight) {
+            maxRight = temp;  // Update maxRight if needed
         }
-
-        result[i] = (top == -1) ? -1 : arr[stack[top]]; // Assign next greater element
-        stack[++top] = i;  // Push current index onto stack
     }
 
     for (int i = 0; i < n; i++) {
-        printf("%d ", result[i]);
+        printf("%d ", arr[i]);
     }
 }
 
