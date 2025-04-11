@@ -1,1 +1,44 @@
-// Your code here...
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char str1[50];
+    char str2[50];
+    fgets(str1,sizeof(str1),stdin);
+    fgets(str2,sizeof(str2),stdin);
+    int len1=strlen(str1);
+    int len2=strlen(str2);
+    if(len1!=len2){
+        printf("No");
+        return 0;
+    }
+    else{
+        int anagram=0;
+        for(int i=0;i<len1;i++){
+            char og=str1[i];
+            int count =1;
+            for(int j=0;j<len1;j++){
+                if(i!=j&&str1[i]==str[j]){
+                    count+=1;
+                }
+            }
+            int found=0;
+            int countcomp=1;
+            for(int j=0;j<len1;j++){
+                if(str1[i]==str[j]){
+                    found=1;
+                    countcomp+=1;
+                }
+            }
+            if(found=1&&count==countcomp){
+                anagram=1;
+            }
+            else{
+                anagram=0;
+                break;
+            }
+        }
+        if(anagram==1){
+            printf("Yes");
+        }
+    }
+}
