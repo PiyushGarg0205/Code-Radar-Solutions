@@ -22,13 +22,13 @@ int main(){
     else{
         int anagram=0;
         for(int i=0;i<len1;i++){
-            char og=str1[i];
             int count =1;
             for(int j=0;j<len1;j++){
                 if(i!=j&&(str1[i]==str1[j])){
                     count+=1;
                 }
             }
+            printf("%s %d  ",str1[i],count);
             int found=0;
             int countcomp=1;
             for(int j=0;j<len1;j++){
@@ -48,8 +48,8 @@ int main(){
         if(anagram==1){
             printf("Yes");
         }
-        // else{
-        //     printf("No");
-        // }
+        else{
+            printf("No");
+        }
     }
 }
