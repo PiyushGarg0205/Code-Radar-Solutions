@@ -28,7 +28,7 @@ int main(){
                     count+=1;
                 }
             }
-            printf("%s %d  ",str1[i],count);
+            printf("%s %d",str1[i],count);
             int found=0;
             int countcomp=1;
             for(int j=0;j<len1;j++){
