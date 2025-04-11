@@ -7,6 +7,14 @@ int main(){
     fgets(str2,sizeof(str2),stdin);
     int len1=strlen(str1);
     int len2=strlen(str2);
+    if (str1[len1 - 1] == '\n') {
+        str1[len1 - 1] = '\0';
+        len1--;
+    }
+    if (str2[len2 - 1] == '\n') {
+        str2[len2 - 1] = '\0';
+        len2--;
+    }
     if(len1!=len2){
         printf("No");
         return 0;
