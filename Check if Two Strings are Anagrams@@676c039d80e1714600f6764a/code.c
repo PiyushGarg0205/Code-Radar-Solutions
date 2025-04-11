@@ -29,14 +29,13 @@ int main(){
                 }
             }
             int found=0;
-            int countcomp=1;
+            int countcomp=0;
             for(int j=0;j<len1;j++){
                 if(str1[i]==str2[j]){
                     found=1;
                     countcomp+=1;
                 }
             }
-            printf("%d",countcomp);
             if(found=1&&count==countcomp){
                 anagram=1;
             }
