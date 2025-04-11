@@ -17,4 +17,5 @@ int main(){
             c[i]=newchar;
         }
     }
+    printf("%s",c);
 }
