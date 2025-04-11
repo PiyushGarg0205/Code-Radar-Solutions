@@ -17,7 +17,7 @@ int main(){
             char og=str1[i];
             int count =1;
             for(int j=0;j<len1;j++){
-                if(i!=j&&str1[i]==str[j]){
+                if(i!=j&&str1[i]==str2[j]){
                     count+=1;
                 }
             }
