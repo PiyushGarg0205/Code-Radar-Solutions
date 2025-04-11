@@ -36,7 +36,7 @@ int main(){
                     countcomp+=1;
                 }
             }
-            printf("%d",found);
+            printf("%d",countcomp);
             if(found=1&&count==countcomp){
                 anagram=1;
             }
