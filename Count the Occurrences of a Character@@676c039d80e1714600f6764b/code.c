@@ -8,7 +8,7 @@ int main(){
     int len=strlen(str);
     int count=0;
     for(int i=0;i<len;i++){
-        if(str1[i]==c){
+        if(str[i]==c){
             count+=1;
         }
         }
