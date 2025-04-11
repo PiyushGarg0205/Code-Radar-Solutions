@@ -3,7 +3,10 @@
 int main(){
     char c[50];
     fgets(c,sizeof(c),stdin);
-    printf("%s",c);
+    if (c[len - 1] == '\n') {
+        c[len - 1] = '\0';
+        len--;
+    }
     char original;
     scanf("%c",&original);
     char newchar;
