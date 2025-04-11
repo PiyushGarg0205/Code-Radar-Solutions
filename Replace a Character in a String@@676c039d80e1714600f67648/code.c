@@ -4,7 +4,7 @@ int main(){
     char c[50];
     fgets(c,sizeof(c),stdin);
     char original;
-    scanf("%c",&original);
+    scanf("%c\n",&original);
     char newchar;
     scanf("%c",&newchar);
     int length=strlen(c);
