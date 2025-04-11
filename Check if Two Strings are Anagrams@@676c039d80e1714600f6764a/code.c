@@ -28,7 +28,6 @@ int main(){
                     count+=1;
                 }
             }
-            printf("%d",count);
             int found=0;
             int countcomp=1;
             for(int j=0;j<len1;j++){
@@ -37,6 +36,7 @@ int main(){
                     countcomp+=1;
                 }
             }
+            printf("%d",found);
             if(found=1&&count==countcomp){
                 anagram=1;
             }
