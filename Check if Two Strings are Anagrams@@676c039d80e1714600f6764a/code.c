@@ -48,5 +48,8 @@ int main(){
         if(anagram==1){
             printf("Yes");
         }
+        else{
+            printf("No");
+        }
     }
 }
